@@ -1,0 +1,18 @@
+// page all font-family
+$regular: "Poppins-Regular";
+$medium: "Poppins-Medium";
+$semiBold: "Poppins-SemiBold";
+/* fonts starts */
+@font-face {
+  font-family: $regular;
+  src: url("fonts/poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: $medium;
+  src: url("fonts/poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: $semiBold;
+  src: url("fonts/poppins/Poppins-SemiBold.ttf");
+}
+/* fonts ends */

@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../assets/img/homepage/logo-min.png" type="image/x-icon">
+    <title>Jobie Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="preloader-cover">
+        <img src="../assets/img/preloader/719.gif" alt="preloader">
+      </div>
+    </div>
+<main class="home-main">
+  <nav class="sidebar">
+      <div class="side-logo_cover">
+          <a href="index.html" class="sidebar-logo">
+              <img src="../assets/img/homepage/logo.png" class="first-logo" alt="jobbie logo">
+              <img src="../assets/img/homepage/logo-min.png" class="second-logo" alt="jobbie logo">
+          </a>
+      </div>
+      <div class="my-list_cover">
+          <ul class="nav-list list-unstyled">
+              <li class="li-item is-active"><a href="../index.html" class="d-flex">
+                      <svg width="18" height="18" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                              d="M23.2753 8.96112L14.3242 1.00585C13.6836 0.436613 12.8564 0.122192 11.9994 0.122192C11.1424 0.122192 10.3152 0.436613 9.67456 1.00585L0.724593 8.96112C0.54823 9.11855 0.4238 9.32579 0.367759 9.55546C0.311717 9.78512 0.326703 10.0264 0.410733 10.2473C0.494764 10.4683 0.643883 10.6586 0.838371 10.793C1.03286 10.9273 1.26356 10.9995 1.49996 11H3.83329V19.1667C3.83431 20.0946 4.20339 20.9842 4.85954 21.6404C5.5157 22.2966 6.40535 22.6656 7.33329 22.6667H8.49996V15.6667C8.49996 11.042 15.5 11.0399 15.5 15.6667V22.6667H16.6666C17.5946 22.6656 18.4842 22.2966 19.1404 21.6404C19.7965 20.9842 20.1656 20.0946 20.1666 19.1667V11H22.5C22.7364 10.9995 22.9671 10.9273 23.1615 10.793C23.356 10.6586 23.5052 10.4683 23.5892 10.2473C23.6732 10.0264 23.6882 9.78512 23.6322 9.55546C23.5761 9.32579 23.4517 9.11855 23.2753 8.96112Z"
+                              fill="#BFBFBF" />
+                      </svg>
+                      <span>Dashboard</span></a></li>
+              <li class="li-item"><a href="../search.html" class="d-flex">
+                      <svg width="18" height="18" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_522)">
+                              <path
+                                  d="M15.7545 24.4961C8.99147 24.4961 3.50891 19.0136 3.50891 12.2506C3.50891 5.4875 8.99141 0.00506592 15.7545 0.00506592C22.5175 0.00506592 28 5.48756 28 12.2506C28 19.0137 22.5175 24.4961 15.7545 24.4961ZM15.7545 3.50381C10.9237 3.50381 7.00766 7.41987 7.00766 12.2506C7.00766 17.0814 10.9237 20.9974 15.7545 20.9974C20.5852 20.9974 24.5013 17.0814 24.5013 12.2506C24.5013 7.41987 20.5852 3.50381 15.7545 3.50381Z"
+                                  fill="#BFBFBF" />
+                              <path
+                                  d="M1.75951 27.9948C1.29451 27.9976 0.847591 27.815 0.517469 27.4875C-0.168521 26.8071 -0.173043 25.6995 0.50734 25.0136C0.510716 25.0102 0.514093 25.0068 0.517469 25.0034L7.09506 18.4258C7.80517 17.7398 8.93693 17.7594 9.62292 18.4696C10.3089 19.1797 10.2893 20.3114 9.57921 20.9974L3.00155 27.4875C2.67143 27.815 2.22452 27.9976 1.75951 27.9948Z"
+                                  fill="#BFBFBF" />
+                          </g>
+                          <defs>
+                              <clipPath id="clip0_1_522">
+                                  <rect width="28" height="28" fill="white" />
+                              </clipPath>
+                          </defs>
+                      </svg>
+                      <span>Search Job</span></a></li>
+              <li class="li-item"><a href="../applications.html" class="d-flex"><svg width="18" height="18"
+                          viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_530)">
+                              <path
+                                  d="M23.7948 12.6045C23.3022 12.6045 22.8395 12.6866 22.4067 12.8582V5.58955H15.153C15.3097 5.15672 15.3918 4.6791 15.3918 4.18657C15.3918 1.87313 13.5186 0 11.2052 0C8.89177 0 7.01863 1.87313 7.01863 4.18657C7.01863 4.6791 7.10072 5.14925 7.25744 5.58955H0.0111694V13.7015C0.749975 13.0299 1.73505 12.6119 2.80968 12.6119C5.12311 12.6119 6.99624 14.4851 6.99624 16.7985C6.99624 19.1119 5.12311 20.9851 2.80968 20.9851C1.73505 20.9851 0.749975 20.5672 0.0111694 19.8955V28H22.4142V20.7313C22.847 20.8955 23.3097 20.9851 23.8022 20.9851C26.1231 20.9851 27.9888 19.1119 27.9888 16.7985C27.9888 14.4851 26.1231 12.6045 23.7948 12.6045Z"
+                                  fill="#BFBFBF" />
+                          </g>
+                          <defs>
+                              <clipPath id="clip0_1_530">
+                                  <rect width="28" height="28" fill="white" />
+                              </clipPath>
+                          </defs>
+                      </svg>
+                      <span>Applications</span>
+                  </a></li>
+              <li class="li-item"><a href="../companies.html" class="d-flex">
+                      <svg width="18" height="18" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_549)">
+                              <path
+                                  d="M22.5678 26.5202C22.8079 26.5202 23.0448 26.6115 23.225 26.7856C24.3769 27.8979 26.0573 28.2683 27.551 27.8047C26.5897 25.802 26.4565 23.5075 27.2015 21.383C28.126 18.7398 28.3577 16.0905 27.3055 13.4334C26.3811 11.0992 24.5972 9.15994 22.3395 8.05408C22.4784 8.79455 22.5484 9.54903 22.5484 10.3115C22.5485 13.5478 21.304 16.5916 19.0444 18.8823C16.7846 21.1733 13.7554 22.4615 10.5148 22.5097C9.9127 22.5191 9.31334 22.4837 8.72076 22.4056C10.5017 25.5274 13.8606 27.5606 17.5516 27.6153C19.1663 27.6403 20.7166 27.302 22.1604 26.6125C22.2904 26.5503 22.4297 26.5202 22.5678 26.5202Z"
+                                  fill="#BFBFBF" />
+                              <path
+                                  d="M10.541 0.00236249C4.79225 -0.111786 0.0134653 4.53885 -0.000396074 10.2863C-0.00379211 11.6906 0.270317 13.052 0.814376 14.3331C0.822277 14.3517 0.829624 14.3706 0.836277 14.3897C1.58126 16.5142 1.44812 18.8086 0.486693 20.8114C1.9806 21.2748 3.66074 20.9046 4.81276 19.7922C5.09657 19.518 5.52122 19.449 5.87732 19.6192C7.32091 20.3087 8.87144 20.648 10.486 20.6221C16.1898 20.5374 20.6576 16.0085 20.6576 10.3117C20.6576 4.73921 16.1193 0.114501 10.541 0.00236249ZM4.819 11.8517C3.99307 11.8517 3.32349 11.1832 3.32349 10.3587C3.32349 9.53414 3.99307 8.86568 4.819 8.86568C5.64493 8.86568 6.3145 9.53414 6.3145 10.3587C6.31444 11.1832 5.64493 11.8517 4.819 11.8517ZM10.3286 11.8517C9.50269 11.8517 8.83312 11.1832 8.83312 10.3587C8.83312 9.53414 9.50269 8.86568 10.3286 8.86568C11.1546 8.86568 11.8241 9.53414 11.8241 10.3587C11.8241 11.1832 11.1546 11.8517 10.3286 11.8517ZM15.8383 11.8517C15.0124 11.8517 14.3428 11.1832 14.3428 10.3587C14.3428 9.53414 15.0124 8.86568 15.8383 8.86568C16.6642 8.86568 17.3338 9.53414 17.3338 10.3587C17.3338 11.1832 16.6642 11.8517 15.8383 11.8517Z"
+                                  fill="#BFBFBF" />
+                          </g>
+                          <defs>
+                              <clipPath id="clip0_1_549">
+                                  <rect width="28" height="28" fill="white" />
+                              </clipPath>
+                          </defs>
+                      </svg>
+                      <span>Message</span></a></li>
+              <li class="li-item"><a href="../profile.html" class="d-flex">
+                      <svg width="18" height="18" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                              d="M12.8334 4.66663C7.00004 4.66663 2.33337 9.33329 2.33337 15.1666C2.33337 21 7.00004 25.6666 12.8334 25.6666C18.6667 25.6666 23.3334 21 23.3334 15.1666H12.8334V4.66663Z"
+                              fill="#BFBFBF" />
+                          <path d="M15.1667 2.33331V12.8333H25.6667C25.6667 6.99998 21 2.33331 15.1667 2.33331Z"
+                              fill="#BFBFBF" />
+                      </svg>
+                      <span>Statistics</span></a></li>
+              <li class="li-item"><a href="#" class="d-flex">
+                      <svg width="18" height="18" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_544)">
+                              <path
+                                  d="M19.621 4.51614H3.54242C2.95871 4.51614 2.48395 4.9909 2.48395 5.57461V26.9415C2.48395 27.5253 2.95871 28 3.54242 28H19.621C20.2041 28 20.6789 27.5253 20.6789 26.9415V5.57461C20.6789 4.9909 20.2041 4.51614 19.621 4.51614ZM16.0323 19.4194H7.45169C6.95266 19.4194 6.54846 19.0152 6.54846 18.5161C6.54846 18.0171 6.95266 17.6129 7.45169 17.6129H16.0323C16.5314 17.6129 16.9356 18.0171 16.9356 18.5161C16.9356 19.0152 16.5314 19.4194 16.0323 19.4194ZM16.0323 15.8065H7.45169C6.95266 15.8065 6.54846 15.4023 6.54846 14.9032C6.54846 14.4042 6.95266 14 7.45169 14H16.0323C16.5314 14 16.9356 14.4042 16.9356 14.9032C16.9356 15.4023 16.5314 15.8065 16.0323 15.8065ZM16.0323 12.1936H7.45169C6.95266 12.1936 6.54846 11.7894 6.54846 11.2903C6.54846 10.7913 6.95266 10.3871 7.45169 10.3871H16.0323C16.5314 10.3871 16.9356 10.7913 16.9356 11.2903C16.9356 11.7894 16.5314 12.1936 16.0323 12.1936Z"
+                                  fill="#BFBFBF" />
+                              <path
+                                  d="M25.5161 2.70968V22.5806C25.5161 23.9445 24.4187 25.2903 22.4853 25.2903V5.5746C22.4853 3.99452 21.2004 2.70968 19.6209 2.70968H5.51477C5.51477 1.2154 6.80243 0 8.38477 0H22.6461C24.2285 0 25.5161 1.2154 25.5161 2.70968Z"
+                                  fill="#BFBFBF" />
+                          </g>
+                          <defs>
+                              <clipPath id="clip0_1_544">
+                                  <rect width="28" height="28" fill="white" />
+                              </clipPath>
+                          </defs>
+                      </svg>
+                      <span>News</span></a></li>
+          </ul>
+      </div>
+      <div class="nav-bottom text-center">
+          <div class="nav-bottom_admin">Jobie Job Portal Admin Dashboard</div>
+          <div class="nav-bottom_rights">© 2020 All Rights Reserved</div>
+          <div class="nav-bottom_made">Made with ♥ by Peterdraw</div>
+      </div>
+  </nav>
+  <div class="main-part">
+    <!---menu when device max-width 767px starts------>
+    <div class="responsive-menu pt-1 mb-4">
+        <div class="responsive-icons d-flex align-items-center justify-content-between">
+            <div class="side-logo_cover">
+                <a href="index.html" class="sidebar-logo">
+                    <img src="../assets/img/homepage/logo.png" class="first-logo" alt="jobbie logo">
+                </a>
+            </div>
+            <div class="header-col_cover pe-4">
+                <div class="toggle-menu">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="my-list_cover">
+            <ul class="nav-list list-unstyled">
+                <li class="li-item is-active"><a href="../index.html" class="d-flex">
+                        <svg width="18" height="18" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.2753 8.96112L14.3242 1.00585C13.6836 0.436613 12.8564 0.122192 11.9994 0.122192C11.1424 0.122192 10.3152 0.436613 9.67456 1.00585L0.724593 8.96112C0.54823 9.11855 0.4238 9.32579 0.367759 9.55546C0.311717 9.78512 0.326703 10.0264 0.410733 10.2473C0.494764 10.4683 0.643883 10.6586 0.838371 10.793C1.03286 10.9273 1.26356 10.9995 1.49996 11H3.83329V19.1667C3.83431 20.0946 4.20339 20.9842 4.85954 21.6404C5.5157 22.2966 6.40535 22.6656 7.33329 22.6667H8.49996V15.6667C8.49996 11.042 15.5 11.0399 15.5 15.6667V22.6667H16.6666C17.5946 22.6656 18.4842 22.2966 19.1404 21.6404C19.7965 20.9842 20.1656 20.0946 20.1666 19.1667V11H22.5C22.7364 10.9995 22.9671 10.9273 23.1615 10.793C23.356 10.6586 23.5052 10.4683 23.5892 10.2473C23.6732 10.0264 23.6882 9.78512 23.6322 9.55546C23.5761 9.32579 23.4517 9.11855 23.2753 8.96112Z"
+                                fill="#BFBFBF" />
+                        </svg>
+                        <span>Dashboard</span></a></li>
+                <li><a href="../search.html" class="d-flex">
+                        <svg width="18" height="18" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_522)">
+                                <path
+                                    d="M15.7545 24.4961C8.99147 24.4961 3.50891 19.0136 3.50891 12.2506C3.50891 5.4875 8.99141 0.00506592 15.7545 0.00506592C22.5175 0.00506592 28 5.48756 28 12.2506C28 19.0137 22.5175 24.4961 15.7545 24.4961ZM15.7545 3.50381C10.9237 3.50381 7.00766 7.41987 7.00766 12.2506C7.00766 17.0814 10.9237 20.9974 15.7545 20.9974C20.5852 20.9974 24.5013 17.0814 24.5013 12.2506C24.5013 7.41987 20.5852 3.50381 15.7545 3.50381Z"
+                                    fill="#BFBFBF" />
+                                <path
+                                    d="M1.75951 27.9948C1.29451 27.9976 0.847591 27.815 0.517469 27.4875C-0.168521 26.8071 -0.173043 25.6995 0.50734 25.0136C0.510716 25.0102 0.514093 25.0068 0.517469 25.0034L7.09506 18.4258C7.80517 17.7398 8.93693 17.7594 9.62292 18.4696C10.3089 19.1797 10.2893 20.3114 9.57921 20.9974L3.00155 27.4875C2.67143 27.815 2.22452 27.9976 1.75951 27.9948Z"
+                                    fill="#BFBFBF" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_522">
+                                    <rect width="28" height="28" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+    
+                        <span>Search Job</span></a></li>
+                <li><a href="../applications.html" class="d-flex"><svg width="18" height="18" viewBox="0 0 28 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_530)">
+                                <path
+                                    d="M23.7948 12.6045C23.3022 12.6045 22.8395 12.6866 22.4067 12.8582V5.58955H15.153C15.3097 5.15672 15.3918 4.6791 15.3918 4.18657C15.3918 1.87313 13.5186 0 11.2052 0C8.89177 0 7.01863 1.87313 7.01863 4.18657C7.01863 4.6791 7.10072 5.14925 7.25744 5.58955H0.0111694V13.7015C0.749975 13.0299 1.73505 12.6119 2.80968 12.6119C5.12311 12.6119 6.99624 14.4851 6.99624 16.7985C6.99624 19.1119 5.12311 20.9851 2.80968 20.9851C1.73505 20.9851 0.749975 20.5672 0.0111694 19.8955V28H22.4142V20.7313C22.847 20.8955 23.3097 20.9851 23.8022 20.9851C26.1231 20.9851 27.9888 19.1119 27.9888 16.7985C27.9888 14.4851 26.1231 12.6045 23.7948 12.6045Z"
+                                    fill="#BFBFBF" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_530">
+                                    <rect width="28" height="28" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Applications</span>
+                    </a></li>
+                <li><a href="../profile.html" class="d-flex">
+                        <svg width="18" height="18" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_549)">
+                                <path
+                                    d="M22.5678 26.5202C22.8079 26.5202 23.0448 26.6115 23.225 26.7856C24.3769 27.8979 26.0573 28.2683 27.551 27.8047C26.5897 25.802 26.4565 23.5075 27.2015 21.383C28.126 18.7398 28.3577 16.0905 27.3055 13.4334C26.3811 11.0992 24.5972 9.15994 22.3395 8.05408C22.4784 8.79455 22.5484 9.54903 22.5484 10.3115C22.5485 13.5478 21.304 16.5916 19.0444 18.8823C16.7846 21.1733 13.7554 22.4615 10.5148 22.5097C9.9127 22.5191 9.31334 22.4837 8.72076 22.4056C10.5017 25.5274 13.8606 27.5606 17.5516 27.6153C19.1663 27.6403 20.7166 27.302 22.1604 26.6125C22.2904 26.5503 22.4297 26.5202 22.5678 26.5202Z"
+                                    fill="#BFBFBF" />
+                                <path
+                                    d="M10.541 0.00236249C4.79225 -0.111786 0.0134653 4.53885 -0.000396074 10.2863C-0.00379211 11.6906 0.270317 13.052 0.814376 14.3331C0.822277 14.3517 0.829624 14.3706 0.836277 14.3897C1.58126 16.5142 1.44812 18.8086 0.486693 20.8114C1.9806 21.2748 3.66074 20.9046 4.81276 19.7922C5.09657 19.518 5.52122 19.449 5.87732 19.6192C7.32091 20.3087 8.87144 20.648 10.486 20.6221C16.1898 20.5374 20.6576 16.0085 20.6576 10.3117C20.6576 4.73921 16.1193 0.114501 10.541 0.00236249ZM4.819 11.8517C3.99307 11.8517 3.32349 11.1832 3.32349 10.3587C3.32349 9.53414 3.99307 8.86568 4.819 8.86568C5.64493 8.86568 6.3145 9.53414 6.3145 10.3587C6.31444 11.1832 5.64493 11.8517 4.819 11.8517ZM10.3286 11.8517C9.50269 11.8517 8.83312 11.1832 8.83312 10.3587C8.83312 9.53414 9.50269 8.86568 10.3286 8.86568C11.1546 8.86568 11.8241 9.53414 11.8241 10.3587C11.8241 11.1832 11.1546 11.8517 10.3286 11.8517ZM15.8383 11.8517C15.0124 11.8517 14.3428 11.1832 14.3428 10.3587C14.3428 9.53414 15.0124 8.86568 15.8383 8.86568C16.6642 8.86568 17.3338 9.53414 17.3338 10.3587C17.3338 11.1832 16.6642 11.8517 15.8383 11.8517Z"
+                                    fill="#BFBFBF" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_549">
+                                    <rect width="28" height="28" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Message</span></a></li>
+                <li><a href="../statistics.html" class="d-flex">
+                        <svg width="18" height="18" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.8334 4.66663C7.00004 4.66663 2.33337 9.33329 2.33337 15.1666C2.33337 21 7.00004 25.6666 12.8334 25.6666C18.6667 25.6666 23.3334 21 23.3334 15.1666H12.8334V4.66663Z"
+                                fill="#BFBFBF" />
+                            <path d="M15.1667 2.33331V12.8333H25.6667C25.6667 6.99998 21 2.33331 15.1667 2.33331Z"
+                                fill="#BFBFBF" />
+                        </svg>
+                        <span>Statistics</span></a></li>
+                <li><a href="../companies.html" class="d-flex">
+                        <svg width="18" height="18" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_544)">
+                                <path
+                                    d="M19.621 4.51614H3.54242C2.95871 4.51614 2.48395 4.9909 2.48395 5.57461V26.9415C2.48395 27.5253 2.95871 28 3.54242 28H19.621C20.2041 28 20.6789 27.5253 20.6789 26.9415V5.57461C20.6789 4.9909 20.2041 4.51614 19.621 4.51614ZM16.0323 19.4194H7.45169C6.95266 19.4194 6.54846 19.0152 6.54846 18.5161C6.54846 18.0171 6.95266 17.6129 7.45169 17.6129H16.0323C16.5314 17.6129 16.9356 18.0171 16.9356 18.5161C16.9356 19.0152 16.5314 19.4194 16.0323 19.4194ZM16.0323 15.8065H7.45169C6.95266 15.8065 6.54846 15.4023 6.54846 14.9032C6.54846 14.4042 6.95266 14 7.45169 14H16.0323C16.5314 14 16.9356 14.4042 16.9356 14.9032C16.9356 15.4023 16.5314 15.8065 16.0323 15.8065ZM16.0323 12.1936H7.45169C6.95266 12.1936 6.54846 11.7894 6.54846 11.2903C6.54846 10.7913 6.95266 10.3871 7.45169 10.3871H16.0323C16.5314 10.3871 16.9356 10.7913 16.9356 11.2903C16.9356 11.7894 16.5314 12.1936 16.0323 12.1936Z"
+                                    fill="#BFBFBF" />
+                                <path
+                                    d="M25.5161 2.70968V22.5806C25.5161 23.9445 24.4187 25.2903 22.4853 25.2903V5.5746C22.4853 3.99452 21.2004 2.70968 19.6209 2.70968H5.51477C5.51477 1.2154 6.80243 0 8.38477 0H22.6461C24.2285 0 25.5161 1.2154 25.5161 2.70968Z"
+                                    fill="#BFBFBF" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_544">
+                                    <rect width="28" height="28" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+    
+                        <span>News</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!---menu when device max-width 767px ends------>
+    <header class="dashboard-header">
+        <div class="custom-container">
+            <div class="row">
+                <div class="col-md-1 col-xl-3 responsive-burger">
+                    <div class="header-col_cover">
+                        <span class="burger-btn"><i class="fa-solid fa-bars-staggered"></i></span>
+                        <span class="header-title">Dashboard</span>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xl-5">
+                    <div class="input-cover">
+                        <div class="input-inner">
+                            <input type="text" class="form-control" placeholder="Search something here...">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-xl-2">
+                    <div
+                        class="header-center_right d-flex justify-content-lg-evenly justify-content-sm-start  align-items-center">
+                        <a href="#" class="message-box text-center text-decoration-none">
+                            <div><i class="fa-solid fa-message"></i></div>
+                            <span>18</span>
+                        </a>
+                        <a href="#" class="notification-box text-center text-decoration-none">
+                            <div><i class="fa-solid fa-bell"></i></div>
+                            <span>52</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6  col-md-3 col-xl-2">
+                    <a href="#" class="header-col_right d-flex align-items-center text-decoration-none justify-content-end">
+                        <div class="header-user">
+                        </div>
+                        <div class="user-info">
+                            <strong>Oda Dink</strong>
+                            <span>Super Admin</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="custom-container">
+      <div class="main-part_bottom">
+        <section class="colorful-cards">
+          <div class="colorful-cards_inner">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-xl-3">
+                <a href="#" class="text-decoration-none">
+                  <div class="colorful-card purple d-flex align-items-center justify-content-end">
+                    <div class="colorful-card_left">
+                      <img src="assets/img/homepage/icon-case.png" alt="suitcase icon" />
+                    </div>
+                    <div class="colorful-card_right">
+                      <p class="colorful-card_subtitle">Interviews Schedule</p>
+                      <h3 class="colorful-card_title">86</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <a href="#" class="text-decoration-none">
+                  <div class="colorful-card blue d-flex justify-content-end align-items-center">
+                    <div class="colorful-card_left">
+                      <img src="assets/img/homepage/app-sent.png" alt="suitcase icon" />
+                    </div>
+                    <div class="colorful-card_right">
+                      <p class="colorful-card_subtitle">Application Sent</p>
+                      <h3 class="colorful-card_title">75</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <a href="#" class="text-decoration-none">
+                  <div class="colorful-card green d-flex justify-content-end align-items-center">
+                    <div class="colorful-card_left">
+                      <img src="assets/img/homepage/user.png" alt="suitcase icon" />
+                    </div>
+                    <div class="colorful-card_right">
+                      <p class="colorful-card_subtitle">Profile Viewed</p>
+                      <h3 class="colorful-card_title">45,673</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <a href="#" class="text-decoration-none">
+                  <div class="colorful-card olive d-flex justify-content-end align-items-center">
+                    <div class="colorful-card_left">
+                      <img src="assets/img/homepage/unread-messages.png" alt="suitcase icon" />
+                    </div>
+                    <div class="colorful-card_right">
+                      <p class="colorful-card_subtitle">Unread Message</p>
+                      <h3 class="colorful-card_title">93</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="homepage-middle">
+          <div class="row">
+            <div class="col-12 col-xl-3">
+              <div class="recent-activities">
+                <div class="recent-activities-top text-center">
+                  <div class="recent-activities_user text-center">
+                    <img src="assets/img/homepage/profilePicture.png" alt="user">
+                  </div>
+                  <div class="user-info">
+                    <strong>Oda Dink</strong>
+                    <span>Programmer</span>
+                  </div>
+                  <div class="user-programming_lang d-flex">
+                    <div class="programming-lang">
+                      <div class="cover-circle orange-circle">
+                        <div class="inner-circle ">
+                          <span>65%</span>
+                        </div>
+                      </div>
+                      <span class="skills">PHP</span>
+                    </div>
+                    <div class="programming-lang">
+                      <div class="cover-circle green-circle">
+                        <div class="inner-circle ">
+                          <span>65%</span>
+                        </div>
+                      </div>
+                      <span class="skills">VUE</span>
+                    </div>
+                    <div class="programming-lang">
+                      <div class="cover-circle blue-circle">
+                        <div class="inner-circle ">
+                          <span>65%</span>
+                        </div>
+                      </div>
+                      <span class="skills">Laravel</span>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="recent-activities_bottom">
+                  <h6 class="activities-bottom_ttl">Recent Activities</h6>
+                  <div class="puzzle-container">
+                    <div class="activites-puzzle">
+                      <div class="activity-puzzle d-flex">
+                        <div class="puzzle-pic">
+                          <img src="assets/img/homepage/icon-activities.png" alt="puzzle icon">
+                        </div>
+                        <div class="puzzle-content">
+                          <p>Your application has accepted in <span>3 Vacancy</span></p>
+                          <span class="puzzle-hour">12h ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activites-puzzle">
+                      <div class="activity-puzzle d-flex">
+                        <div class="puzzle-pic">
+                          <img src="assets/img/homepage/icon-activities.png" alt="puzzle icon">
+                        </div>
+                        <div class="puzzle-content">
+                          <p>Your application has accepted in <span>3 Vacancy</span></p>
+                          <span class="puzzle-hour">12h ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activites-puzzle">
+                      <div class="activity-puzzle d-flex">
+                        <div class="puzzle-pic">
+                          <img src="assets/img/homepage/icon-activities.png" alt="puzzle icon">
+                        </div>
+                        <div class="puzzle-content">
+                          <p>Your application has accepted in <span>3 Vacancy</span></p>
+                          <span class="puzzle-hour">12h ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activites-puzzle">
+                      <div class="activity-puzzle d-flex">
+                        <div class="puzzle-pic">
+                          <img src="assets/img/homepage/icon-activities.png" alt="puzzle icon">
+                        </div>
+                        <div class="puzzle-content">
+                          <p>Your application has accepted in <span>3 Vacancy</span></p>
+                          <span class="puzzle-hour">12h ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-9">
+              <div class="row">
+                <div class="col-12">
+                  <div class="homepage-middle_chart">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="recommend-jobs">
+                    <p class="rec-jobs_title">Recomended Jobs</p>
+                    <div class="recommend-job_box">
+                      <div class="row">
+                        <div class="slider-wrapper">
+                          <div class="slider">
+                            <div class="slider__item">
+                              <a href="#" class="text-decoration-none">
+                                <div class="rec-job_body">
+                                  <div class="rec-job_subtitle d-flex align-items-center justify-content-between">
+                                    <div class="job-about">
+                                      <strong class="job-company_name">Maximoz Team</strong>
+                                      <h3 class="job-title">Database Progammer</h3>
+                                    </div>
+                                    <div class="job-pic"></div>
+                                  </div>
+                                  <h6 class="job-salary">$14,000 - $25,000</h6>
+                                  <p class="job-descr">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam...
+                                  </p>
+                                  <div class="job-body_bottom d-flex align-items-center justify-content-between">
+                                    <div class="job-remote">remote</div>
+                                    <span class="job-place">London, England</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="slider__item">
+                              <a href="#" class="text-decoration-none">
+                                <div class="rec-job_body">
+                                  <div class="rec-job_subtitle d-flex align-items-center justify-content-between">
+                                    <div class="job-about">
+                                      <strong class="job-company_name">Klean n Clin Studios</strong>
+                                      <h3 class="job-title">Senior Programmer</h3>
+                                    </div>
+                                    <div class="job-pic"></div>
+                                  </div>
+                                  <h6 class="job-salary">$14,000 - $25,000</h6>
+                                  <p class="job-descr">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam...
+                                  </p>
+                                  <div class="job-body_bottom d-flex align-items-center justify-content-between">
+                                    <div class="job-remote">PART TIME</div>
+                                    <span class="job-place">Manchester, England</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="slider__item">
+                              <a href="#" class="text-decoration-none">
+                                <div class="rec-job_body">
+                                  <div class="rec-job_subtitle d-flex align-items-center justify-content-between">
+                                    <div class="job-about">
+                                      <strong class="job-company_name">Klean n Clin Studios</strong>
+                                      <h3 class="job-title">Senior Programmer</h3>
+                                    </div>
+                                    <div class="job-pic"></div>
+                                  </div>
+                                  <h6 class="job-salary">$14,000 - $25,000</h6>
+                                  <p class="job-descr">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam...
+                                  </p>
+                                  <div class="job-body_bottom d-flex align-items-center justify-content-between">
+                                    <div class="job-remote">PART TIME</div>
+                                    <span class="job-place">Manchester, England</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="slider__item">
+                              <a href="#" class="text-decoration-none">
+                                <div class="rec-job_body">
+                                  <div class="rec-job_subtitle d-flex align-items-center justify-content-between">
+                                    <div class="job-about">
+                                      <strong class="job-company_name">Maximoz Team</strong>
+                                      <h3 class="job-title">Ract Native Developer</h3>
+                                    </div>
+                                    <div class="job-pic"></div>
+                                  </div>
+                                  <h6 class="job-salary">$10,000 - $15,000</h6>
+                                  <p class="job-descr">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam...
+                                  </p>
+                                  <div class="job-body_bottom d-flex align-items-center justify-content-between">
+                                    <div class="job-remote">remote</div>
+                                    <span class="job-place">New York, USA</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="slider__item">
+                              <a href="#" class="text-decoration-none">
+                                <div class="rec-job_body">
+                                  <div class="rec-job_subtitle d-flex align-items-center justify-content-between">
+                                    <div class="job-about">
+                                      <strong class="job-company_name">Klean n Clin Studios</strong>
+                                      <h3 class="job-title">Back-end Developer</h3>
+                                    </div>
+                                    <div class="job-pic"></div>
+                                  </div>
+                                  <h6 class="job-salary">$15,000 - $20,000</h6>
+                                  <p class="job-descr">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam...
+                                  </p>
+                                  <div class="job-body_bottom d-flex align-items-center justify-content-between">
+                                    <div class="job-remote">PART TIME</div>
+                                    <span class="job-place">New York, USA</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="slider__item">
+                              <a href="#" class="text-decoration-none">
+                                <div class="rec-job_body">
+                                  <div class="rec-job_subtitle d-flex align-items-center justify-content-between">
+                                    <div class="job-about">
+                                      <strong class="job-company_name">Maximoz Team</strong>
+                                      <h3 class="job-title">Data Science</h3>
+                                    </div>
+                                    <div class="job-pic"></div>
+                                  </div>
+                                  <h6 class="job-salary">$8,000 - $12,000</h6>
+                                  <p class="job-descr">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam...
+                                  </p>
+                                  <div class="job-body_bottom d-flex align-items-center justify-content-between">
+                                    <div class="job-remote">remote</div>
+                                    <span class="job-place">Rome, Italy</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="homepage-bottom">
+          <div class="homepage-bottom_top d-flex align-items-center justify-content-between">
+            <p class="rec-jobs_title">Featured Companies</p>
+          </div>
+          <div class="all-vacancies">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-xl-3">
+                <a href="#" class="text-decoration-none">
+                  <div class="vacancy d-flex align-items-center justify-content-between">
+                    <div class="vacancy-left"></div>
+                    <div class="vacancy-right">
+                      <strong>Herman-Carter </strong>
+                      <span>21 Vacancy</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <a href="#" class="text-decoration-none">
+                  <div class="vacancy d-flex align-items-center justify-content-between">
+                    <div class="vacancy-left"></div>
+                    <div class="vacancy-right">
+                      <strong>Funk Inc.</strong>
+                      <span>21 Vacancy</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <a href="#" class="text-decoration-none">
+                  <div class="vacancy d-flex align-items-center justify-content-between">
+                    <div class="vacancy-left"></div>
+                    <div class="vacancy-right">
+                      <strong>Williamson Inc</strong>
+                      <span>21 Vacancy</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <a href="#" class="text-decoration-none">
+                  <div class="vacancy d-flex align-items-center justify-content-between">
+                    <div class="vacancy-left"></div>
+                    <div class="vacancy-right">
+                      <strong>Donnelly Ltd.</strong>
+                      <span>21 Vacancy</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+<!----------==========PLUGINS===========--->
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="assets/js/plugins.min.js"></script>
+<!----------==========PLUGINS===========--->
+<!----------==========JQUERY===========--->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+  integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script><!----------==========JQUERY===========--->
+<!----------==========SLICK SLIDER===========--->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script><!----------==========SLICK SLIDER===========--->
+<script>
+  //sidebar burger menu
+  const burgerBtn = document.querySelector('.burger-btn'),
+    sideBarMenu = document.querySelector('.sidebar'),
+    mainWindow = document.querySelector('.main-part');
+  burgerBtn.onclick = () => {
+    sideBarMenu.classList.toggle('is-none');
+    mainWindow.classList.toggle('is-active');
+    sideBarMenu.querySelector('.sidebar-logo .first-logo').classList.toggle('is-none');
+    sideBarMenu.querySelector('.sidebar-logo .second-logo').classList.toggle('is-active');
+    sideBarMenu.querySelector('.sidebar-logo .second-logo').style.height = '40px';
+
+  };
+
+  // adding active class function
+  function addActiveClass(selector) {
+    document.querySelector(selector).classList.toggle('is-active');
+  };
+
+  document.querySelector('.toggle-menu').addEventListener('click', () => {
+    addActiveClass('.responsive-menu .my-list_cover');
+    document.querySelector('.responsive-menu').classList.toggle('toggle')
+  })
+
+
+
+
+  //sidebar active class
+  const navList = document.querySelector('.nav-list'),
+    navListLi = navList.querySelectorAll('.nav-list li');
+
+  function navListActive() {
+    navListLi.forEach(element => {
+      console.log(element);
+      element.onclick = (e) => {
+
+        if (e.target.classList.contains('is-active')) {
+          e.target.classList.remove('is-active')
+        } else {
+          e.target.classList.add('is-active')
+
+        }
+      }
+    });
+  };
+  navListActive()
+
+  // preloader
+
+  window.onload = function () {
+    let preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  };
+
+
+  //slick slider
+  $(document).ready(function () {
+
+    /* Small card slider */
+    $('.slider').slick({
+      arrows: false,
+      dots: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
+    });
+
+
+  });
+
+  // circle progress bar
+
+  let progressValue = 0;
+  let orangeProgress = setInterval(circleBarFunc, 10, '.orange-circle', '.orange-circle .inner-circle span', '#FF8E26', 66);
+  let greenProgress = setInterval(circleBarFunc, 10, '.green-circle', '.green-circle .inner-circle span', '#3EA834', 31);
+  let blueProgress = setInterval(circleBarFunc, 10, '.blue-circle', '.blue-circle .inner-circle span', '#22AC93', 85);
+
+
+  function circleBarFunc(selector, selectorText, first) {
+    progressValue++;
+    document.querySelector(selectorText).textContent = `${progressValue}%`;
+    document.querySelector(selector).style.background = `conic-gradient(
+                    ${first} ${progressValue * 3.6}deg,
+                    #f0f0f0 ${progressValue * 3.6}deg
+                )`;
+
+    function stopColorTimer(num, funcName) {
+      if (progressValue == num) {
+        clearInterval(funcName);
+      }
+    };
+
+    stopColorTimer(66, orangeProgress);
+    stopColorTimer(31, greenProgress);
+    stopColorTimer(7, blueProgress);
+  };
+
+  // apex chart js
+  let options = {
+    chart: {
+      type: 'line',
+      height: 350,
+    },
+    colors: ["#4E36E2", "#1BD084"],
+    series: [{
+      name: 'Application Sent',
+      data: [40, 30, 20, 25, 15, 40, 30, 20, 25, 15]
+    },
+    {
+      name: 'Interviews',
+      data: [20, 55, 29, 37, 25, 36, 44, 25, 50, 58]
+    },
+    ],
+    xaxis: {
+      categories: ['Week 01', 'Week 02', 'Week 03', 'Week 04', 'Week 05', 'Week 06', 'Week 07', 'Week 08', 'Week 09', 'Week 10']
+    },
+    stroke: {
+      curve: 'smooth',
+    }
+  }
+
+  let chart = new ApexCharts(document.querySelector(".homepage-middle_chart"), options);
+
+  chart.render();
+
+</script>
+</body>
+</html>

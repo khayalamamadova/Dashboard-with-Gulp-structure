@@ -1,0 +1,519 @@
+//= include/header.html
+<!-- Modal -->
+<div class="modal fade" id="skills-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-title fs-5 text-center" id="exampleModalLabel">Add your skill</h4>
+        <div class="mb-3">
+          <label for="skill-name" class="form-label">Skill name:</label>
+          <input type="text" class="form-control" id="skill-name" required>
+        </div>
+        <div class="mb-3">
+          <label for="skill-percantage" class="form-label">How much good you are at it(in percentages)? </label>
+          <input type="text" class="form-control" id="skill-percantage" required>
+        </div>
+        <div class="d-grid gap-2">
+          <button class="btn btn-success add-skill_btn" type="button">Add skill</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="home-main">
+  //= include/sidebar.html
+  <div class="main-part">
+    <!---menu when device max-width 767px starts------>
+    //= include/responsive-header.html
+    <!---menu when device max-width 767px ends------>
+    <header class="dashboard-header">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-md-1 col-xl-3 responsive-burger">
+            <div class="header-col_cover">
+              <span class="burger-btn"><i class="fa-solid fa-bars-staggered"></i></span>
+              <span class="header-title">Profile</span>
+            </div>
+          </div>
+          <div class="col-md-5 col-xl-5">
+            <div class="input-cover">
+              <div class="input-inner">
+                <input type="text" class="form-control" placeholder="Search something here...">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-xl-2">
+            <div
+              class="header-center_right d-flex justify-content-lg-evenly justify-content-sm-start  align-items-center">
+              <a href="#" class="message-box text-center text-decoration-none">
+                <div><i class="fa-solid fa-message"></i></div>
+                <span>18</span>
+              </a>
+              <a href="#" class="notification-box text-center text-decoration-none">
+                <div><i class="fa-solid fa-bell"></i></div>
+                <span>52</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-6  col-md-3 col-xl-2">
+            <a href="#" class="header-col_right d-flex align-items-center text-decoration-none justify-content-end">
+              <div class="header-user">
+              </div>
+              <div class="user-info">
+                <strong>Oda Dink</strong>
+                <span>Super Admin</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="custom-container">
+      <div class="main-part_bottom">
+        <div class="edit-profile_inner">
+          <div class="row">
+            <div class="col-12 col-md-12 col-xl-8">
+              <div class="edit-profile">
+                <div class="edit-profile_up d-flex align-items-center justify-content-between flex-wrap">
+                  <h4 class="edit-profile_title">Edit Profile</h4>
+                  <div class="profile-buttons">
+                    <button type="button">Cancel</button>
+                    <button type="button" class="is-active">Save Changes</button>
+                  </div>
+                </div>
+                <div class="edit-profile_form">
+                  <form id="edit-profile">
+                    <div class="form-title">Generals</div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element">
+                          <label for="edit-first_name">First Name</label>
+                          <input type="text" name="edit-first_name" id="edit-first_name">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element">
+                          <label for="edit-middle_name">Middle Name</label>
+                          <input type="text" name="edit-middle_name" placeholder="Type here" id="edit-middle_name">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element">
+                          <label for="edit-last_name">Last Name</label>
+                          <input type="text" name="edit-last_name" id="edit-last_name">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element">
+                          <label for="edit-username">Username</label>
+                          <input type="text" name="edit-username" id="edit-username">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element show-button_parent">
+                          <label for="edit-password">Password</label>
+                          <input type="password" name="edit-password" id="edit-password">
+                          <button type="button" class="show-button">SHOW</button>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element show-button_parent">
+                          <label for="edit-repassword">Re-Type Password</label>
+                          <input type="password" name="edit-repassword" id="edit-repassword">
+                          <button type="button" class="show-button">SHOW</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-title">Contact</div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element input-parent">
+                          <label for="edit-mobile">Mobile Phone</label>
+                          <input type="text" name="edit-mobile" id="edit-mobile">
+                          <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element input-parent">
+                          <label for="edit-whatsapp">Whatsapp</label>
+                          <input type="text" name="edit-whatsapp" id="edit-whatsapp">
+                          <span class="input-icon"><i class="fa-brands fa-whatsapp"></i></span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element input-parent">
+                          <label for="edit-email">Email</label>
+                          <input type="email" name="edit-email" id="edit-email">
+                          <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element">
+                          <label for="edit-address">address</label>
+                          <input type="text" name="edit-address" id="edit-address">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element">
+                          <label for="edit-city">city</label>
+                          <select name="edit-city" id="edit-city" class="form-select border-0 outline-0"
+                            aria-label="Default select example">
+                            <option selected>London</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="edit-form_element">
+                          <label for="edit-country">country</label>
+                          <select class="form-select border-0 outline-0" id="edit-country" name="edit-country"
+                            aria-label="Default select example">
+                            <option selected>England</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-title">About me</div>
+                    <div class="edit-form_element border-0">
+                      <label for="about-me">Tell About You</label>
+                      <textarea name="about-me" id="about-me"></textarea>
+                    </div>
+                    <div class="skills-box d-flex justify-content-between">
+                      <h4 class="form-title after-none m-0">Edit Profile</h4>
+                      <button type="button" class="border-0 outline-0 add-skills_btn" data-bs-toggle="modal"
+                        data-bs-target="#skills-modal">+ Add New Skils</button>
+                    </div>
+                    <div class="skills">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <div class="skill">
+                            <div class="circle">
+                              <span id="r-num" class="skill-percant">78%</span>
+                            </div>
+                            <div class="skill-text">
+                              <p class="skill-name">Programming</p>
+                              <div class="">
+                                <input type="range" id="r-range" value="78" min="0" max="100">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <div class="skill">
+                            <div class="circle">
+                              <span id="sec-num" class="skill-percant">65%</span>
+                            </div>
+                            <div class="skill-text">
+                              <p class="skill-name">Prototyping</p>
+                              <div class="">
+                                <input type="range" id="sec-range" value="65" min="0" max="100">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <div class="skill">
+                            <div class="circle">
+                              <span id="third-num" class="skill-percant">89%</span>
+                            </div>
+                            <div class="skill-text">
+                              <p class="skill-name">UI Design</p>
+                              <div class="">
+                                <input type="range" id="third-range" value="89" min="0" max="100">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <div class="skill">
+                            <div class="circle">
+                              <span id="fourth-num" class="skill-percant">94%</span>
+                            </div>
+                            <div class="skill-text">
+                              <p class="skill-name">Researching</p>
+                              <div class="">
+                                <input type="range" id="fourth-range" value="94" min="0" max="100">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-xl-4">
+              <div class="profile-details">
+                <div class="recent-activities">
+                  <div class="recent-activities-top text-center">
+                    <div class="recent-activities_user text-center">
+                      <img src="assets/img/homepage/profilePicture.png" alt="user">
+                    </div>
+                    <div class="user-info">
+                      <strong>Oda Dink</strong>
+                      <span>Programmer</span>
+                    </div>
+                    <div class="user-following d-flex">
+                      <div class="user-followers">
+                        <strong class="follower-title">228</strong>
+                        <span>Following</span>
+                      </div>
+                      <div class="user-followers">
+                        <strong class="follower-title">4,842</strong>
+                        <span>Followers</span>
+                      </div>
+                    </div>
+                    <div class="user-contacts">
+                      <div class="user-contact">
+                        <a href="#">
+                          <div class="user-contact_details">
+                            <div class="contact-circle"><i class="fa-solid fa-phone"></i></div>
+                            <span>+50 123 456 78</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="user-contact">
+                        <a href="#">
+                          <div class="user-contact_details">
+                            <div class="contact-circle"><i class="fa-solid fa-envelope"></i></div>
+                            <span>davidheree@mail.com</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="user-programming_lang d-flex mt-4">
+                      <div class="programming-lang me-3">
+                        <div class="cover-circle orange-circle">
+                          <div class="inner-circle">
+                            <span>65%</span>
+                          </div>
+                        </div>
+                        <span class="skills">PHP</span>
+                      </div>
+                      <div class="programming-lang me-3">
+                        <div class="cover-circle green-circle">
+                          <div class="inner-circle ">
+                            <span>65%</span>
+                          </div>
+                        </div>
+                        <span class="skills">VUE</span>
+                      </div>
+                      <div class="programming-lang me-3">
+                        <div class="cover-circle blue-circle">
+                          <div class="inner-circle ">
+                            <span>65%</span>
+                          </div>
+                        </div>
+                        <span class="skills">Laravel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-portfolio">
+                  <div class="portfolio-title_box d-flex align-items-center justify-content-between">
+                    <h4 class="portfolio-title">Portofolios</h4>
+                    <div class="dot-menu">
+                      <div class="dropdown">
+                        <button class="dropdown-toggle border-0" type="button" id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis-vertical dot-menu_icon"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-links">
+                    <div class="user-link">
+                      <a href="#">
+                        <div class="user-link_inner">
+                          <div class="user-circle blue"><i class="fa-brands fa-facebook-f"></i></div>
+                          <strong>/davidheree.porto</strong>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="user-link">
+                      <a href="#">
+                        <div class="user-link_inner">
+                          <div class="user-circle purple"><i class="fa-solid fa-basketball"></i></div>
+                          <strong>/david.drib</strong>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="user-link">
+                      <a href="#">
+                        <div class="user-link_inner">
+                          <div class="user-circle mid-blue"><i class="fa-brands fa-linkedin-in"></i></div>
+                          <strong>/davidheree222</strong>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="user-link">
+                      <a href="#">
+                        <div class="user-link_inner">
+                          <div class="user-circle red"><i class="fa-brands fa-youtube"></i></div>
+                          <strong>/davidhereechan</strong>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+<script src="assets/js/plugins.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+  integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  //sidebar burger menu
+  const burgerBtn = document.querySelector('.burger-btn'),
+    sideBarMenu = document.querySelector('.sidebar'),
+    mainWindow = document.querySelector('.main-part');
+  burgerBtn.onclick = () => {
+    sideBarMenu.classList.toggle('is-none');
+    mainWindow.classList.toggle('is-active');
+    sideBarMenu.querySelector('.sidebar-logo .first-logo').classList.toggle('is-none');
+    sideBarMenu.querySelector('.sidebar-logo .second-logo').classList.toggle('is-active');
+    sideBarMenu.querySelector('.sidebar-logo .second-logo').style.height = '40px';
+
+  };
+
+  // adding active class function
+  function addActiveClass(selector) {
+    document.querySelector(selector).classList.toggle('is-active');
+  };
+
+  document.querySelector('.toggle-menu').addEventListener('click', () => {
+    addActiveClass('.responsive-menu .my-list_cover');
+    document.querySelector('.responsive-menu').classList.toggle('toggle')
+  })
+
+
+
+  //sidebar active class
+  const navList = document.querySelector('.nav-list'),
+    navListLi = navList.querySelectorAll('.nav-list li');
+
+  function navListActive() {
+    navListLi.forEach(element => {
+      element.onclick = (e) => {
+
+        if (e.target.classList.contains('is-active')) {
+          e.target.classList.remove('is-active')
+        } else {
+          e.target.classList.add('is-active')
+
+        }
+      }
+    });
+  };
+  navListActive()
+
+  // preloader
+
+  window.onload = function () {
+    let preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  };
+
+
+
+  // circle progress bar
+
+  let progressValue = 0;
+  let orangeProgress = setInterval(circleBarFunc, 10, '.orange-circle', '.orange-circle .inner-circle span', '#FF8E26', 66);
+  let greenProgress = setInterval(circleBarFunc, 10, '.green-circle', '.green-circle .inner-circle span', '#3EA834', 31);
+  let blueProgress = setInterval(circleBarFunc, 10, '.blue-circle', '.blue-circle .inner-circle span', '#22AC93', 85);
+
+
+  function circleBarFunc(selector, selectorText, first) {
+    progressValue++;
+    document.querySelector(selectorText).textContent = `${progressValue}%`;
+    document.querySelector(selector).style.background = `conic-gradient(
+                    ${first} ${progressValue * 3.6}deg,
+                    #f0f0f0 ${progressValue * 3.6}deg
+                )`;
+
+    function stopColorTimer(num, funcName) {
+      if (progressValue == num) {
+        clearInterval(funcName);
+      }
+    };
+
+    stopColorTimer(66, orangeProgress);
+    stopColorTimer(31, greenProgress);
+    stopColorTimer(7, blueProgress);
+  };
+
+  document.getElementById("r-range").addEventListener('input', function () {
+    document.getElementById("r-num").innerText = `${document.getElementById("r-range").value}%`;
+  });
+
+  document.getElementById("sec-range").addEventListener('input', function () {
+    document.getElementById("sec-num").innerText = `${document.getElementById("sec-range").value}%`;
+  });
+
+
+  document.getElementById("third-range").addEventListener('input', function () {
+    document.getElementById("third-num").innerText = `${document.getElementById("third-range").value}%`;
+  });
+
+  document.getElementById("fourth-range").addEventListener('input', function () {
+    document.getElementById("fourth-num").innerText = `${document.getElementById("fourth-range").value}%`;
+  });
+
+  // show button
+  document.querySelectorAll('.show-button').forEach(button => {
+    button.addEventListener('click', function () {
+      button.textContent = button.textContent == 'SHOW' ? 'HIDE' : 'SHOW'
+      let input = this.previousElementSibling;
+      input.type = input.type == 'password' ? 'text' : 'password';
+
+    })
+
+  })
+
+  // adding new skill
+  document.querySelector('.add-skill_btn').addEventListener('click', () => {
+    const newSkill = document.createElement('div');
+    newSkill.classList.add('col-12', 'col-md-6')
+    document.querySelector('.skills .row').append(newSkill);
+    newSkill.innerHTML = `
+                          <div class="skill">
+                            <div class="circle">
+                               <span id="fourth-num" class="skill-percant">94%</span>
+                             </div>
+                             <div class="skill-text">
+                               <p class="skill-name">Researching</p>
+                               <div class="">
+                                 <input type="range" id="fourth-range" value="94" min="0" max="100">
+                               </div>
+                             </div>
+                           </div>
+    `
+  })
+
+</script>
+//= include/footer.html

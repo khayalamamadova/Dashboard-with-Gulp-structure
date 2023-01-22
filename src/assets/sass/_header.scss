@@ -1,0 +1,123 @@
+.dashboard-header {
+  padding: 24px 32px 16px;
+  .header-col_cover {
+    font: 22px $semiBold;
+    line-height: 32px;
+    i {
+      display: inline-block;
+      margin-right: 16px; //45
+      cursor: pointer;
+    }
+  }
+  .header-col_right {
+    .header-user {
+      width: 40px;
+      height: 40px;
+      background-color: #c4c4c4;
+      border-radius: 100%;
+    }
+  }
+}
+.header-center_right {
+  .message-box,
+  .notification-box {
+    padding: 10px 0;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 32px;
+    transition: var(--transition);
+    &:hover {
+      background-color: #40189d;
+      i {
+        color: #fff;
+      }
+    }
+    span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: -48px;
+      right: -18px;
+      font: 10px $semiBold;
+      line-height: 10px;
+      background-color: #40189d;
+      border-radius: 50%;
+      color: #fff;
+      padding-top: 6px;
+      transition: var(--transition);
+    }
+    i {
+      font-size: 18px;
+      color: #3e4954;
+      transition: var(--transition);
+    }
+  }
+}
+.input-inner {
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+  color: rgba(117, 117, 117, 1);
+  input {
+    width: 100%;
+    font: 12px $regular;
+    line-height: 18px;
+    border-radius: 82px;
+    border: 0;
+    outline: 0;
+    background-color: #e3e3e3;
+    padding: 10px 12px;
+    &::placeholder {
+      font: 12px $regular;
+      line-height: 18px;
+    }
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14px;
+  }
+}
+.responsive-menu {
+  background-color: #40189d;
+  position: relative;
+  transition: var(--transition);
+  .is-active {
+    display: block;
+    top: 0;
+    right: 100%;
+    margin-top: 16px;
+    transition: var(--transition);
+  }
+  .side-logo_cover {
+    width: 140px;
+    height: 60px;
+    transition: var(--transition);
+  }
+  .burger-btn_responsive {
+    color: #fff;
+    transition: var(--transition);
+    margin-right: 24px;
+    font-size: 22px;
+  }
+  .my-list_cover {
+    transition: var(--transition);
+  }
+}
+.user-info {
+  margin-left: 8px;
+  strong {
+    font: 14px $semiBold;
+    line-height: 18px;
+  }
+  span {
+    display: block;
+    font: 12px $regular;
+    line-height: 18px;
+    color: rgba(143, 143, 143, 1);
+  }
+}

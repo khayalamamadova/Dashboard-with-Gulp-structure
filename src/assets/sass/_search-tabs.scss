@@ -1,0 +1,39 @@
+.search-tabs {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  .nav {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+    .nav-item {
+      min-width: 130px;
+      text-align: center;
+      height: 45px;
+      background-color: #e3d7ff;
+      margin-right: 14px;
+      border-radius: 24px;
+      font: 14px $medium;
+      transition: var(--transition);
+      &:hover {
+        background-color: #fff;
+        color: #40189d;
+      }
+      &.active {
+        background-color: #40189d;
+        a {
+          color: #fff;
+          transition: var(--transition);
+        }
+      }
+      a {
+        color: #40189d;
+        line-height: 31px;
+      }
+      &.disabled {
+        background-color: transparent;
+        a {
+          color: rgba(173, 173, 173, 1);
+        }
+      }
+    }
+  }
+}

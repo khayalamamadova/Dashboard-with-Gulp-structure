@@ -1,0 +1,13 @@
+.application-wrapper {
+  padding-top: 12px;
+  .nav-item {
+    min-width: 80px !important;
+  }
+  .search-tabs {
+    margin: 0;
+  }
+  .font-size {
+    font: 14px $semiBold !important;
+    margin-bottom: 0;
+  }
+}

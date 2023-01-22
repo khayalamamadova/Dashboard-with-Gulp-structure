@@ -1,0 +1,89 @@
+:root {
+  --main-black: #2e3131;
+  --pane-padding: 5px 42px;
+  --transition: 0.4s all ease;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.home-main {
+  display: flex;
+  background-color: #40189d;
+}
+.main-part_bottom {
+  padding: 32px 16px 54px;
+}
+@import "sidebar";
+@import "header";
+@import "index";
+@import "search";
+@import "search-tabs";
+@import "search-bar";
+@import "application";
+@import "app-table";
+@import "companies";
+@import "profile";
+@import 'skills';
+@import 'statistics';
+.main-part {
+  width: calc(100% - 250px);
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(242, 242, 242, 1);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  margin-left: 250px;
+}
+.main-part.is-active {
+  width: calc(100% - 10px);
+  margin-left: 100px;
+  transition: var(--transition);
+}
+.custom-container {
+  max-width: 1200px;
+  margin: auto;
+  // border: solid red;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+#preloader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 999;
+  background-color: #fff;
+}
+// Styling the default Slick dots
+.slick-dots {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+  li {
+    margin: 0 0.25rem;
+  }
+  button {
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #c4c4c4;
+    text-indent: -9999px;
+  }
+  li.slick-active button {
+    background-color: #40189d;
+  }
+}

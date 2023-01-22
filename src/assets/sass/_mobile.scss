@@ -1,0 +1,122 @@
+@media screen and (max-width: 1200px) {
+  .header-title {
+    display: none;
+  }
+  .header-center_right {
+    width: 100%;
+  }
+  .notification-box {
+    margin-right: 0 !important;
+  }
+  .colorful-card,
+  .recent-activities {
+    margin-bottom: 16px;
+  }
+  .vacancy {
+    margin-bottom: 12px;
+  }
+  .search-buttons_cover {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search-tabs .nav-item {
+    margin-top: 16px;
+  }
+  .responsive-filter_menu {
+    padding: 0 16px 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .filter-menu_inner {
+    display: none;
+  }
+  .job-results {
+    padding-bottom: 0;
+  }
+  .filter-burger_menu,
+  .filter-menu_close {
+    display: block;
+  }
+  .companies-container .res-word {
+    display: none;
+  }
+  .profile-details {
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .rec-job_body {
+    margin-bottom: 16px;
+  }
+  .pagination {
+    justify-content: center !important;
+  }
+  .search-tabs .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .company-details {
+    display: none;
+  }
+  .companies-container .search-bar {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sidebar,
+  .input-cover,
+  .sidebar.is-active,
+  .main-part.is-active {
+    display: none;
+  }
+  .main-part {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+  }
+  .home-main {
+    width: 100%;
+    display: block;
+  }
+  .my-list_cover {
+    display: none;
+    right: -100%;
+  }
+  .dashboard-header {
+    padding: 0;
+  }
+  .responsive-burger {
+    display: none;
+  }
+  .responsive-padding {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .search-input_wrapper {
+    margin-top: 16px;
+  }
+  .search-bar .search-select-wrapper {
+    border-right: 0;
+  }
+  .charts-container {
+    padding: 16px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .res-word {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .responsive-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-burger_menu {
+    display: none;
+  }
+}

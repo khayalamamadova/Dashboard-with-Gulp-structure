@@ -1,0 +1,315 @@
+.colorful-cards {
+  padding-bottom: 16px;
+  .colorful-card {
+    padding: 40px 16px 30px;
+    border-radius: 20px;
+    .colorful-card_left {
+      height: 42px;
+      overflow: hidden;
+      img {
+        @extend %resImg;
+      }
+    }
+    .colorful-card_right {
+      width: calc(100% - 42px);
+      color: #fff;
+      text-align: right;
+
+      .colorful-card_subtitle {
+        font: 12px $medium;
+        line-height: 17px;
+        margin: 0;
+      }
+      .colorful-card_title {
+        font: 24px $semiBold;
+        line-height: 27px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.purple {
+  background-color: #4e36e2;
+}
+.blue {
+  background-color: #48a9f8;
+}
+.green {
+  background-color: #1bd084;
+}
+.olive {
+  background-color: #8bc740;
+}
+.homepage-middle {
+  padding-top: 16px;
+  .homepage-middle_chart {
+    cursor: pointer;
+    border-radius: 20px;
+    height: 300px;
+    .apexcharts-toolbar {
+      display: none;
+    }
+  }
+  .recommend-jobs {
+    padding-top: 48px;
+    .recommend-job_box {
+      margin-top: 16px;
+    }
+  }
+}
+.rec-jobs_title {
+  margin: 0;
+  font: 14px $semiBold;
+  line-height: 20px;
+  margin-top: 16px;
+}
+.all-vacancies {
+  padding-top: 30px;
+}
+.view-more {
+  min-width: 150px;
+  display: inline-block;
+  text-align: center;
+  padding: 6px 12px;
+  text-decoration: none;
+  font: 14px $regular;
+  line-height: 20px;
+  border: 1px solid #40189d;
+  color: #40189d;
+  border-radius: 50px;
+  transition: var(--transition);
+  i {
+    margin-left: 8px;
+    transition: var(--transition);
+  }
+  &:hover {
+    background-color: #40189d;
+    color: #fff;
+  }
+}
+.vacancy {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 20px;
+  .vacancy-left {
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    background-color: rgba(211, 211, 211, 1);
+    margin-right: 8px;
+  }
+  .vacancy-right {
+    width: calc(100% - 58px);
+    text-align: center;
+    justify-content: center;
+    span {
+      color: rgba(64, 24, 157, 1);
+      font: 12px $medium;
+      line-height: 20px;
+      display: block;
+    }
+    strong {
+      color: #000;
+      font: 14px $semiBold;
+      line-height: 24px;
+    }
+  }
+}
+.slider-dot {
+  ul {
+    padding: 0;
+    margin: 0;
+    margin-right: 46px;
+    li {
+      margin-right: 8px;
+      a {
+        font-size: 14px;
+        color: #c4c4c4;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &.active {
+        a {
+          color: #40189d;
+        }
+      }
+    }
+  }
+}
+.recent-activities {
+  background-color: #fff;
+  border-radius: 20px;
+  .recent-activities-top {
+    padding: 16px;
+    padding-bottom: 0;
+    @extend %dFlex;
+    justify-content: center;
+    flex-direction: column;
+    .recent-activities_user {
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      margin-bottom: 12px;
+      img {
+        @extend %resImg;
+      }
+    }
+    .user-info {
+      margin-top: 8px;
+    }
+  }
+  .recent-activities_bottom {
+    padding: 0px 16px 12px;
+    .activities-bottom_ttl {
+      font: 14px $medium;
+      line-height: 20px;
+      color: rgba(61, 61, 61, 1);
+      margin: 0;
+    }
+    .activites-puzzle {
+      margin-top: 6px;
+      margin-bottom: 12px;
+      .puzzle-pic {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        img {
+          @extend %resImg;
+        }
+      }
+      .puzzle-content {
+        margin-left: 8px;
+        width: calc(100% - 48px);
+        p {
+          margin: 0;
+          font: 12px $semiBold;
+          line-height: 14px;
+          color: #616161;
+          span {
+            color: #3d3d3d;
+          }
+        }
+        .puzzle-hour {
+          font: 12px $regular;
+          line-height: 18px;
+          color: #aeaeae;
+        }
+      }
+    }
+  }
+}
+.job-inner {
+  display: none;
+  .is-active {
+    display: block;
+  }
+}
+.user-programming_lang {
+  margin-top: 24px;
+  .programming-lang {
+    margin-right: 6px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .cover-circle {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      .inner-circle {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 50%;
+        @extend %dFlex;
+        justify-content: center;
+      }
+    }
+    .skills {
+      display: inline-block;
+      margin-top: 8px;
+      font: 12px $medium;
+      line-height: 18px;
+      color: rgba(0, 0, 0, 0.74);
+    }
+  }
+}
+.rec-job_body {
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  margin-bottom: 16px;
+  .job-company_name {
+    color: rgba(121, 121, 121, 1);
+    font: 12px $medium;
+    line-height: 20px;
+  }
+  .job-title {
+    font: 14px $medium;
+    line-height: 20px;
+  }
+  .job-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #d3d3d3;
+  }
+  .job-salary {
+    color: rgba(64, 24, 157, 1);
+    font: 12px $medium;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  .job-descr {
+    color: rgba(12, 12, 12, 0.7);
+    font: 10px $regular;
+    line-height: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+  }
+  .job-remote,
+  .job-place {
+    font: 12px $medium;
+    line-height: 20px;
+  }
+  .job-remote {
+    background-color: #e9e0ff;
+    padding: 10px 18px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: rgba(64, 24, 157, 1);
+    transition: var(--transition);
+    &:hover {
+      background-color: #40189d;
+      color: #fff;
+    }
+  }
+  .job-place {
+    text-transform: capitalize;
+  }
+}
+.inner-circle span {
+  font: 12px $semiBold;
+  line-height: 20px;
+}
+.slider__item {
+  margin-right: 16px;
+  width: 300px;
+  overflow: hidden;
+}
+.slider-wrapper {
+  max-width: 1000px;
+  overflow: hidden;
+}

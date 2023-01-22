@@ -1,0 +1,312 @@
+.edit-profile_inner {
+  .edit-profile {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    padding-bottom: 54px;
+    .edit-profile_up {
+      .edit-profile_title {
+        margin: 0;
+        font: 18px $semiBold;
+        line-height: 24px;
+      }
+      .edit-profile_available {
+        .available-title {
+          font-family: Poppins;
+          font: 14px $semiBold;
+          line-height: 20px;
+          color: rgba(92, 92, 92, 1);
+          margin: 0;
+          margin-right: 8px;
+        }
+      }
+    }
+    .edit-profile_form {
+      .form-title {
+        font: 14px $semiBold;
+        line-height: 20px;
+        margin-top: 24px;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 100%;
+          height: 2px;
+          background-color: #e7e7e7;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
+.edit-form_element {
+  border-bottom: 1px solid #e7e7e7;
+  padding-top: 16px;
+  font: 12px $medium;
+  line-height: 18px;
+  margin-bottom: 12px;
+  label {
+    margin-bottom: 24px;
+    display: block;
+    color: rgba(81, 81, 81, 1);
+    text-transform: capitalize;
+  }
+  input {
+    border: 0;
+    outline: 0;
+    display: block;
+    margin-bottom: 12px;
+    color: #000;
+  }
+  &.show-button_parent {
+    position: relative;
+    .show-button {
+      position: absolute;
+      right: 20px;
+      bottom: 15%;
+      border: 0;
+      outline: 0;
+      background-color: transparent;
+      color: rgba(64, 24, 157, 1);
+      font: 12px $semiBold;
+      line-height: 18px;
+    }
+  }
+  &.input-parent {
+    position: relative;
+    .input-icon {
+      position: absolute;
+      color: #40189d;
+      left: 10px;
+      bottom: 15%;
+      display: block;
+      font-size: 18px;
+    }
+    input {
+      padding-left: 32px;
+    }
+  }
+  select {
+    font: 12px $medium;
+    line-height: 18px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  textarea {
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    background-color: #fbfbfb;
+    border-radius: 20px;
+    padding: 22px 24px;
+    outline: 0;
+    border: 1px solid #c2c2c2;
+  }
+}
+.skills-box {
+  position: relative;
+  .form-title {
+    margin: 0;
+  }
+  button {
+    font: 14px $semiBold;
+    line-height: 20px;
+    background-color: transparent;
+    color: rgba(64, 24, 157, 1);
+  }
+}
+.after-none::after {
+  content: none !important;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    border: 1px solid #f3eff9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    .skill-percant {
+      font: 12px $semiBold;
+      line-height: 20px;
+      color: rgba(64, 24, 157, 1);
+    }
+  }
+  .skill-text {
+    width: calc(100% - 74px);
+    .skill-name {
+      font: 14px $medium;
+      color: rgba(81, 81, 81, 1);
+      margin: 0;
+    }
+    .skill-block {
+      position: relative;
+      width: 180px;
+      height: 10px;
+      background-color: #eeeeee;
+      border-radius: 20px;
+      .skill-block_colorful {
+        height: 100%;
+        border-radius: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #40189d;
+      }
+    }
+  }
+}
+.user-following {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(235, 235, 235, 1);
+
+  .user-followers {
+    margin-top: 24px;
+    line-height: 20px;
+    border: 1px solid rgba(240, 240, 240, 1);
+    border-radius: 20px;
+    padding: 12px 24px;
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+    strong {
+      display: block;
+      font: 14px $semiBold;
+    }
+    span {
+      font: 12px $regular;
+    }
+  }
+}
+.user-contact {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  a {
+    text-decoration: none;
+    .user-contact_details {
+      display: flex;
+      align-items: center;
+      .contact-circle {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(64, 24, 157, 0.16);
+        border-radius: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16px;
+      }
+      i {
+        color: #40189d;
+      }
+      span {
+        font: 14px $regular;
+        line-height: 20px;
+        color: #000;
+        transition: var(--transition);
+      }
+    }
+  }
+}
+.user-contact:hover a span {
+  color: #40189d;
+}
+.edit-profile_inner .recent-activities .recent-activities-top {
+  padding-bottom: 32px;
+}
+.user-portfolio {
+  margin-top: 24px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 20px;
+  .portfolio-title_box {
+    .portfolio-title {
+      font: 14px $medium;
+      line-height: 20px;
+    }
+    .dot-menu .dropdown .dropdown-toggle {
+      background-color: transparent;
+    }
+  }
+}
+.user-links {
+  .user-link {
+    &:first-child {
+      margin-top: 16px;
+    }
+    margin-bottom: 24px;
+    a {
+      text-decoration: none;
+      .user-link_inner {
+        display: flex;
+        align-items: center;
+        .user-circle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 18px;
+          width: 50px;
+          height: 50px;
+          margin-right: 8px;
+          i {
+            color: #fff;
+            font-size: 20px;
+          }
+          &.blue {
+            background-color: #3d6ad6;
+          }
+          &.purple {
+            background: rgba(234, 81, 141, 1);
+          }
+          &.mid-blue {
+            background-color: #0073b1;
+          }
+          &.red {
+            background-color: #ff0000;
+          }
+        }
+        strong {
+          font: 14px $medium;
+          line-height: 20px;
+          color: #3d3d3d;
+        }
+      }
+    }
+  }
+}
+.profile-buttons {
+  button {
+    @extend %button;
+    min-width: 105px;
+    border: 0;
+    outline: 0;
+    &:first-child {
+      font: 14px $semiBold;
+      line-height: 22px;
+      color: rgba(159, 159, 159, 1);
+      background: rgba(244, 244, 244, 1);
+      &:hover {
+        background-color: #40189d;
+        color: #fff;
+      }
+    }
+    &.is-active {
+      background-color: #40189d;
+      color: #fff;
+      padding: 0 20px;
+      &:hover {
+        color: rgba(159, 159, 159, 1);
+        background: rgba(244, 244, 244, 1);
+      }
+    }
+  }
+}

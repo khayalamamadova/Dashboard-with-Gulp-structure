@@ -1,0 +1,80 @@
+.charts-container {
+    .apexcharts-toolbar {
+        display: none;
+    }
+    .strength-chart_cover{
+        border-radius: 20px;
+        padding: 24px;
+        background-color: #fff;
+        .strength-chart-up {
+            .dropdown-toggle {
+                background-color: #fff;
+            }
+
+
+        }
+        .profile-strength_box {
+            width: 100%;
+            max-height: 300px;
+        }
+    }
+    .chart-card {
+        height: 180px;
+        padding: 16px;
+        margin-bottom: 24px;
+        .chart-card_title {
+            font: 12px "Poppins-Medium";
+            line-height: 17px;
+            margin: 0;
+            color: #414141;
+        }
+        .chart-card_amount {
+            display: inline-block;
+            margin-bottom: 42px;
+            font: 24px $semiBold;
+
+        }
+        .chart-card_bottom {
+            .chart-card_icon {
+                margin-right: 8px;
+                i {
+                    font-size: 36px;
+                    color: #40189D;
+                }
+            }
+            .chart-card_additions {
+                font: 8px $regular;
+                // line-height: 18px;
+                color: rgba(176, 176, 176, 1);
+                strong {
+                    display: block;
+                    font-size: 14px;
+                    color: rgba(43, 193, 85, 1);
+                }
+                span {
+                    color:rgba(64, 24, 157, 1);
+                }
+            }
+        }
+    }
+}
+.chart-card_icon {
+    margin-right: 8px;
+    i {
+        font-size: 36px;
+        color: #40189D;
+    }
+}  
+.strength-title {
+    margin: 0;
+    font: 18px "Poppins-SemiBold";
+    line-height: 24px;
+}
+
+.pie-chart_percent {
+    position: relative;
+    top: 120px;
+    left: 120px;
+    font: 32px $semiBold;
+
+}
